@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Publishers INC | Cover Design</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/brand-homepage.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+</head>
+<body>
+ 
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="brand-logo default-logo">
+                <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="brand-logo white-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="bookpublishing.html"><i class="fas fa-book-open me-2"></i>Book Publishing</a></li>
+                            <li><a class="dropdown-item" href="cover-design.html"><i class="fas fa-pen-fancy me-2"></i>Book Cover Design</a></li>
+                            <li><a class="dropdown-item" href="bookediting.html"><i class="fas fa-edit me-2"></i>Book Editing</a></li>
+                            <li><a class="dropdown-item" href="bookmarketing.html"><i class="fas fa-bullhorn me-2"></i>Book Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-cta ms-lg-4">
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+<!-- ================== SPLIT HERO SECTION ================== -->
+<section class="hero-section d-flex align-items-center text-white position-relative overflow-hidden">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- LEFT: Text Content -->
+      <div class="col-lg-6 text-lg-start text-center hero-text z-2">
+       <h1 class="hero-title mb-3">
+  We <span class="highlight">Design</span> a Cover  
+  <br>
+  <span class="subline">That Demands Attention.</span>
+</h1>
+<p class="lead mb-4 text-light fw-light">
+  Transform your vision into a captivating book cover that speaks before your words do — creative, bold, and built to stand out on every shelf.
+</p>
+
+        <div class="hero-buttons d-flex flex-wrap justify-content-lg-start justify-content-center">
+          <a href="contact.html" class="btn btn-primary m-2 px-5 py-2 rounded-pill fw-semibold shadow-lg">Start Publishing</a>
+          <a href="contact.html" class="btn btn-outline-light m-2 px-5 py-2 rounded-pill fw-semibold">Join Our Publishing!</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Hero Image -->
+      <div class="col-lg-6 text-center position-relative mt-5 mt-lg-0">
+        <img src="assets/img/book-cover-maker-collage.webp" alt="Book Publishing" class="img-fluid hero-image rounded-4" >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================== STYLES ================== -->
+<style>
+.hero-section {
+  min-height: 80vh;
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 30%, #dc6e21 100%);
+  position: relative;
+  padding: 80px 0;
+}
+
+.hero-text {
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+  text-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.hero-title .highlight {
+  color: #ff7b00;
+  position: relative;
+}
+.hero-title .highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+}
+
+.hero-title .subline {
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+.btn-outline-light {
+  border: 1px solid rgba(255,255,255,0.7);
+  transition: all 0.3s ease;
+}
+.btn-outline-light:hover {
+  background: #fff;
+  transform: translateY(-3px);
+}
+
+.hero-image {
+  max-width: 90%;
+  animation: fadeInRight 1s ease forwards;
+  filter: drop-shadow(0 0 25px rgba(0,0,0,0.5));
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 991px) {
+  .hero-section {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .hero-image {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  .hero-buttons a {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+</style>
+
+
+<section class="core-services py-5 position-relative text-white">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Our <span>Creative Design Services</span></h2>
+    <p class="section-subtitle mb-5 text-light">
+      We don’t just design covers — we craft visual identities that make readers stop, stare, and remember.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="service-card p-4">
+          <div class="icon mb-3"><i class="fas fa-palette"></i></div>
+          <h5 class="fw-bold mb-2">Custom Cover Design</h5>
+          <p>From concept to final art — we design covers that capture your story’s essence and command attention.</p>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="service-card p-4">
+          <div class="icon mb-3"><i class="fas fa-layer-group"></i></div>
+          <h5 class="fw-bold mb-2">Illustration & Typography</h5>
+          <p>Original illustrations and handpicked fonts that make your book instantly recognizable and unforgettable.</p>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="service-card p-4">
+          <div class="icon mb-3"><i class="fas fa-lightbulb"></i></div>
+          <h5 class="fw-bold mb-2">Brand Identity for Authors</h5>
+          <p>We help you build a visual style that connects your name, genre, and design — across every future release.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================== SECTION 2: DESIGN PROCESS ================== -->
+<section class="process-section py-5 text-white position-relative">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Our <span>Creative Design Process</span></h2>
+    <p class="section-subtitle mb-5 text-light">
+      Every remarkable cover begins with a powerful idea — here’s how we turn yours into visual magic.
+    </p>
+
+    <div class="process-steps row justify-content-center">
+      <div class="col-md-3 col-sm-6 step">
+        <div class="step-icon"><i class="fas fa-comments"></i></div>
+        <h6>1. Creative Brief</h6>
+        <p>We start by understanding your story, genre, and audience to define the perfect creative direction.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 step">
+        <div class="step-icon"><i class="fas fa-lightbulb"></i></div>
+        <h6>2. Concept Development</h6>
+        <p>Our designers sketch and brainstorm unique concepts that visually capture your book’s essence.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 step">
+        <div class="step-icon"><i class="fas fa-paint-brush"></i></div>
+        <h6>3. Design & Refinement</h6>
+        <p>We craft your cover with precision — from colors to typography — refining until it feels just right.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 step">
+        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+        <h6>4. Final Delivery</h6>
+        <p>You receive high-resolution print and digital files, ready for Amazon, Kindle, and global publishing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SECTION 3: WHY CHOOSE US (BOOK COVER DESIGN) ================== -->
+<section class="why-choose-us py-5 position-relative">
+  <div class="container text-center text-white">
+    <h2 class="section-title mb-4">Why <span>Authors Trust Our Design Studio</span></h2>
+    <p class="section-subtitle mb-5 text-light">
+      We don’t just design covers — we create timeless visuals that define your brand as an author.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-box p-4">
+          <div class="feature-icon mb-3"><i class="fas fa-magic"></i></div>
+          <h5 class="fw-bold mb-2">Bespoke Creative Vision</h5>
+          <p>Every cover is a one-of-one — no templates, no repetition — just pure artistic innovation for your story.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-box p-4">
+          <div class="feature-icon mb-3"><i class="fas fa-stopwatch"></i></div>
+          <h5 class="fw-bold mb-2">Precision & Speed</h5>
+          <p>We balance creativity and efficiency — delivering breathtaking results faster than traditional agencies.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-box p-4">
+          <div class="feature-icon mb-3"><i class="fas fa-heart"></i></div>
+          <h5 class="fw-bold mb-2">Author-First Design</h5>
+          <p>Your voice drives our visuals — we design with your vision, your readers, and your future brand in mind.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SHARED STYLES ================== -->
+<style>
+    h5,h6{
+        color: white;
+    }
+.section-title {
+    color: #fff;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.section-title span {
+  color: #ff7b00;
+}
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* CORE SERVICES */
+.core-services {
+  background: radial-gradient(circle at 20% 20%, #1a1a1a 0%, #000000 100%);
+}
+.service-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255,123,0,0.4);
+}
+.service-card p {
+    color: #fff;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #ff7b00;
+}
+
+/* PROCESS */
+.process-section {
+  background: linear-gradient(135deg, #0a0a0a 0%, #111 40%, #dc6e21 100%);
+}
+.step {
+  margin-bottom: 30px;
+}
+.step-icon {
+  font-size: 2.5rem;
+  color: #ffae00;
+  margin-bottom: 15px;
+}
+.step h6 {
+  font-weight: 700;
+}
+.step p {
+  opacity: 0.85;
+}
+
+/* WHY CHOOSE US */
+.why-choose-us {
+  background: #0a0a0a;
+}
+.feature-box {
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.feature-box:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 25px rgba(255,123,0,0.3);
+}
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ff7b00;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-title { font-size: 2rem; }
+  .service-card, .feature-box { padding: 2rem 1rem; }
+}
+</style>
+
+
+<!-- ===== CTA SECTION (BOOK COVER DESIGN) ===== -->
+<section class="cta-section position-relative text-center text-white">
+  <div class="cta-overlay"></div>
+  <div class="cta-content container position-relative">
+    <h2 class="fw-bold mb-3">Ready to Design a Cover That Turns Heads?</h2>
+    <p class="mb-4 text-light">
+      Make your first impression unforgettable. Our expert designers craft covers that stop the scroll, spark curiosity, 
+      and sell your story before the first page is read.
+    </p>
+    <div class="cta-buttons d-flex flex-wrap justify-content-center gap-3">
+      <a href="contact.html" class="cta-btn primary">Start My Design</a>
+      <a href="about.html" class="cta-btn outline">View Details</a>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                       <a href="index.html" class="footer-logo">
+  <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="footer-logo-img" style="height: 50px;">
+</a>
+
+                        <p>We craft distinctive brand identities and experiences that captivate audiences and drive business growth.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/nexuspublishersinc/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/nexuspublishersinc/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="bookpublishing.html">Book Publishing</a></li>
+                            <li><a href="bookediting.html">Book Editing</a></li>
+                            <li><a href="cover-design.html">Book Cover Design</a></li>
+                            <li><a href="bookmarketing.html">Book Marketing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Contact Us</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i>3657 Nicole Ct,Turlock,CA,95382</p>
+                            <p><i class="fas fa-phone"></i> +1 (646) 386-1399</p>
+                            <p><i class="fas fa-envelope"></i> info@nexuspublishersinc.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Nexus Publishers INC. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Privacy Policy | Terms of Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+       <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="assets/js/brand-homepage.js"></script>
+</body>
+</html>

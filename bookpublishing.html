@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Publishers INC | Book Publishing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/brand-homepage.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
+</head>
+<body>
+ 
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="brand-logo default-logo">
+                <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="brand-logo white-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="bookpublishing.html"><i class="fas fa-book-open me-2"></i>Book Publishing</a></li>
+                            <li><a class="dropdown-item" href="cover-design.html"><i class="fas fa-pen-fancy me-2"></i>Book Cover Design</a></li>
+                            <li><a class="dropdown-item" href="bookediting.html"><i class="fas fa-edit me-2"></i>Book Editing</a></li>
+                            <li><a class="dropdown-item" href="bookmarketing.html"><i class="fas fa-bullhorn me-2"></i>Book Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-cta ms-lg-4">
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+<!-- ================== SPLIT HERO SECTION ================== -->
+<section class="hero-section d-flex align-items-center text-white position-relative overflow-hidden">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- LEFT: Text Content -->
+      <div class="col-lg-6 text-lg-start text-center hero-text z-2">
+        <h1 class="hero-title mb-3">
+          <span class="highlight">Empower</span> Your Words,  
+          <br>
+          <span class="subline">Publish Without Limits.</span>
+        </h1>
+        <p class="lead mb-4 text-light fw-light">
+          Elevate your manuscript with professional editing, design, and global distribution — crafted to make your book unforgettable.
+        </p>
+        <div class="hero-buttons d-flex flex-wrap justify-content-lg-start justify-content-center">
+          <a href="contact.html" class="btn btn-primary m-2 px-5 py-2 rounded-pill fw-semibold shadow-lg">Start Publishing</a>
+          <a href="contact.html" class="btn btn-outline-light m-2 px-5 py-2 rounded-pill fw-semibold">Get A Quote</a>
+        </div>
+      </div>
+
+      <!-- RIGHT: Hero Image -->
+      <div class="col-lg-6 text-center position-relative mt-5 mt-lg-0">
+        <img src="assets/img/Rectangle 152.webp" alt="Book Publishing" class="img-fluid hero-image rounded-4" >
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================== STYLES ================== -->
+<style>
+.hero-section {
+  min-height: 80vh;
+  background: linear-gradient(135deg, #000000 0%, #0a0a0a 30%, #dc6e21 100%);
+  position: relative;
+  padding: 80px 0;
+}
+
+.hero-text {
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: capitalize;
+  text-shadow: 0 0 30px rgba(0,0,0,0.4);
+}
+
+.hero-title .highlight {
+  color: #ff7b00;
+  position: relative;
+}
+.hero-title .highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+}
+
+.hero-title .subline {
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.btn-primary {
+  border: none;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+.btn-outline-light {
+  border: 1px solid rgba(255,255,255,0.7);
+  transition: all 0.3s ease;
+}
+.btn-outline-light:hover {
+  background: #fff;
+  transform: translateY(-3px);
+}
+
+.hero-image {
+  max-width: 90%;
+  animation: fadeInRight 1s ease forwards;
+  filter: drop-shadow(0 0 25px rgba(0,0,0,0.5));
+}
+
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 991px) {
+  .hero-section {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+  .hero-image {
+    margin-top: 40px;
+    max-width: 100%;
+  }
+  .hero-buttons a {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+</style>
+
+
+
+<!-- ================== SECTION 1: CORE SERVICES ================== -->
+<section class="core-services py-5 position-relative text-white">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Our <span>Core Publishing Services</span></h2>
+    <p class="section-subtitle mb-5 text-light">
+      Everything you need to turn your book into a professional, market-ready masterpiece.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="service-card p-4">
+          <div class="icon mb-3"><i class="fas fa-pen-nib"></i></div>
+          <h5 class="fw-bold mb-2">Editing & Proofreading</h5>
+          <p>Expert editors refine your writing for clarity, tone, and perfection — ensuring your story shines.</p>
+        </div>
+      </div>
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="service-card p-4">
+          <div class="icon mb-3"><i class="fas fa-book-open"></i></div>
+          <h5 class="fw-bold mb-2">Book Design & Layout</h5>
+          <p>Stunning, reader-friendly layouts and covers that make your book look like a bestseller.</p>
+        </div>
+      </div>
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="service-card p-4">
+          <div class="icon mb-3"><i class="fas fa-globe-americas"></i></div>
+          <h5 class="fw-bold mb-2">Global Distribution</h5>
+          <p>Get your book on Amazon, Barnes & Noble, Apple Books, and more — worldwide exposure guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SECTION 2: PROCESS ================== -->
+<section class="process-section py-5 text-white position-relative">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">From <span>Manuscript to Marketplace</span></h2>
+    <p class="section-subtitle mb-5 text-light">
+      Every great book follows a journey. Here’s how we bring yours to life.
+    </p>
+
+    <div class="process-steps row justify-content-center">
+      <div class="col-md-3 col-sm-6 step">
+        <div class="step-icon"><i class="fas fa-file-alt"></i></div>
+        <h6>1. Submission</h6>
+        <p>Send us your manuscript and share your publishing goals.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 step">
+        <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+        <h6>2. Editing & Design</h6>
+        <p>Our editors and designers craft your book’s finest version.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 step">
+        <div class="step-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+        <h6>3. Publishing</h6>
+        <p>We publish across global platforms with ISBN and metadata.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 step">
+        <div class="step-icon"><i class="fas fa-bullhorn"></i></div>
+        <h6>4. Marketing</h6>
+        <p>Boost visibility with PR campaigns and social media strategies.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SECTION 3: WHY CHOOSE US ================== -->
+<section class="why-choose-us py-5 position-relative">
+  <div class="container text-center text-white">
+    <h2 class="section-title mb-4">Why <span>Authors Choose Us</span></h2>
+    <p class="section-subtitle mb-5 text-light">We don’t just publish books — we build legacies.</p>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-box p-4">
+          <div class="feature-icon mb-3"><i class="fas fa-award"></i></div>
+          <h5 class="fw-bold mb-2">Award-Winning Team</h5>
+          <p>Experienced editors, designers, and marketers dedicated to your success.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box p-4">
+          <div class="feature-icon mb-3"><i class="fas fa-rocket"></i></div>
+          <h5 class="fw-bold mb-2">Fast, Transparent Process</h5>
+          <p>We handle every step with clarity and speed — no hidden surprises.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box p-4">
+          <div class="feature-icon mb-3"><i class="fas fa-users"></i></div>
+          <h5 class="fw-bold mb-2">Author-Focused Approach</h5>
+          <p>Your voice, your story — our mission is to amplify it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================== SHARED STYLES ================== -->
+<style>
+    h5,h6{
+        color: white;
+    }
+.section-title {
+    color: #fff;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.section-title span {
+  color: #ff7b00;
+}
+.section-subtitle {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* CORE SERVICES */
+.core-services {
+  background: radial-gradient(circle at 20% 20%, #1a1a1a 0%, #000000 100%);
+}
+.service-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(6px);
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255,123,0,0.4);
+}
+.service-card p {
+    color: #fff;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: #ff7b00;
+}
+
+/* PROCESS */
+.process-section {
+  background: linear-gradient(135deg, #0a0a0a 0%, #111 40%, #dc6e21 100%);
+}
+.step {
+  margin-bottom: 30px;
+}
+.step-icon {
+  font-size: 2.5rem;
+  color: #ffae00;
+  margin-bottom: 15px;
+}
+.step h6 {
+  font-weight: 700;
+}
+.step p {
+  opacity: 0.85;
+}
+
+/* WHY CHOOSE US */
+.why-choose-us {
+  background: #0a0a0a;
+}
+.feature-box {
+  background: rgba(255,255,255,0.05);
+  border-radius: 14px;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.feature-box:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 25px rgba(255,123,0,0.3);
+}
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ff7b00;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-title { font-size: 2rem; }
+  .service-card, .feature-box { padding: 2rem 1rem; }
+}
+</style>
+
+
+
+<!-- ===== CTA Section ===== -->
+<section class="cta-section">
+  <div class="cta-overlay"></div>
+  <div class="cta-content">
+    <h2>Ready to Publish Your Story to the World?</h2>
+    <p>
+      Let’s transform your manuscript into a masterpiece. From editing and design to global publishing — 
+      we’ll handle it all while you focus on what matters most: your words.
+    </p>
+    <div class="cta-buttons">
+      <a href="contact.html" class="cta-btn primary">Start My Book</a>
+      <a href="cover-design.html" class="cta-btn outline">Explore Our Designing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                       <a href="#" class="footer-logo">
+  <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="footer-logo-img" style="height: 50px;">
+</a>
+
+                        <p>We craft distinctive brand identities and experiences that captivate audiences and drive business growth.</p>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/nexuspublishersinc/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/nexuspublishersinc/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="bookpublishing.html">Book Publishing</a></li>
+                            <li><a href="bookediting.html">Book Editing</a></li>
+                            <li><a href="cover-design.html">Book Cover Design</a></li>
+                            <li><a href="bookmarketing.html">Book Marketing</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h4>Contact Us</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-map-marker-alt"></i>3657 Nicole Ct,Turlock,CA,95382</p>
+                            <p><i class="fas fa-phone"></i> +1 (646) 386-1399</p>
+                            <p><i class="fas fa-envelope"></i> info@nexuspublishersinc.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 Nexus Publishers INC. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Privacy Policy | Terms of Service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+       <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="assets/js/brand-homepage.js"></script>
+</body>
+</html>
