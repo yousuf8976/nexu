@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/brand-homepage.css">
+    <link rel="stylesheet" href="assets/css/nav.css">
 </head>
 <body>
  
@@ -40,24 +41,18 @@
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-book-open me-2"></i>Book Publishing</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-pen-fancy me-2"></i>Content Creation</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-edit me-2"></i>Editing Services</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-bullhorn me-2"></i>Marketing</a></li>
+                            <li><a class="dropdown-item" href="bookpublishing.html"><i class="fas fa-book-open me-2"></i>Book Publishing</a></li>
+                            <li><a class="dropdown-item" href="cover-design.html"><i class="fas fa-pen-fancy me-2"></i>Book Cover Design</a></li>
+                            <li><a class="dropdown-item" href="bookediting.html"><i class="fas fa-edit me-2"></i>Book Editing</a></li>
+                            <li><a class="dropdown-item" href="bookmarketing.html"><i class="fas fa-bullhorn me-2"></i>Book Marketing</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <div class="nav-cta ms-lg-4">
-                    <a href="#" class="btn btn-primary">Get Started</a>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
                 </div>
             </div>
         </div>
@@ -166,91 +161,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<!-- CSS -->
-<style>
-
-
-.platforms-section {
-  background: #f8f9fc;
-  padding: 100px 0;
-  overflow: hidden;
-  position: relative;
-}
-
-.section-title {
-  text-align: center;
-  font-weight: 800;
-  font-size: 2.2rem;
-  color: #111;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-.section-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: var(--gradient);
-  margin: 12px auto 0;
-  border-radius: 3px;
-}
-
-.platformSwiper {
-  overflow: visible;
-}
-
-.platform-card {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  border-radius: 20px;
-  padding: 40px 20px;
-  text-align: center;
-  transition: all 0.4s ease;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.platform-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-}
-
-.platform-card img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 15px;
-  filter: grayscale(100%) brightness(0.2);
-  transition: all 0.4s ease;
-}
-
-.platform-card:hover img {
-  filter: grayscale(0%) brightness(1);
-}
-
-.platform-card p {
-  font-weight: 600;
-  color: #222;
-  margin: 0;
-  font-size: 1rem;
-}
-
-.swiper-wrapper {
-  align-items: center;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .platform-card {
-    padding: 25px 15px;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-}
-</style>
 
 <!-- JS (Swiper Initialization) -->
 <script>
@@ -274,193 +184,6 @@ const swiper = new Swiper(".platformSwiper", {
 </script>
 
 
-<style>
-/* Base Reset */
-* { box-sizing: border-box; }
-html { color-scheme: dark; }
-body {
-  font-family: "Poppins", system-ui, sans-serif;
-  background-color: #000;
-  line-height: 1.6;
-}
-
-/* Section */
-.section {
-  padding: 80px 20px;
-  background: radial-gradient(circle at top left, #0d0d0d, #000);
-}
-
-.container {
-
-  margin-inline: auto;
-}
-
-.header {
-  display: grid;
-  gap: 12px;
-  justify-items: center;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 14px;
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 999px;
-  color: #dc6e21;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  background: rgba(255,255,255,0.02);
-}
-
-.title {
-  color: #fff;
-  font-size: clamp(28px, 4vw, 40px);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-}
-
-.subtitle {
-  max-width: 70ch;
-  color: #ccc;
-  font-size: clamp(14px, 2vw, 16px);
-}
-
-/* Grid */
-.cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-@media (min-width: 640px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
-}
-@media (min-width: 1024px) {
-  .cards { grid-template-columns: repeat(4, 1fr); }
-}
-
-/* Cards */
-.card {
-  position: relative;
-  background: linear-gradient(145deg, rgba(20,20,20,0.95), rgba(0,0,0,0.8));
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 18px;
-  padding: 26px;
-  display: grid;
-  gap: 16px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  overflow: hidden;
-}
-.card::before {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(220,110,33,0.2), transparent);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-.card:hover::before {
-  opacity: 1;
-}
-.card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(220,110,33,0.5);
-  box-shadow: 0 8px 25px rgba(220,110,33,0.25);
-}
-
-/* Badge */
-.badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #dc6e21, #ff944d);
-  color: #fff;
-  box-shadow: 0 0 10px rgba(220,110,33,0.6);
-}
-.badge svg {
-  width: 22px;
-  height: 22px;
-  stroke: #fff;
-}
-
-/* Typography */
-.card h3 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #fff;
-  margin: 5px 0;
-}
-
-.card p {
-  color: #ccc;
-  font-size: 14px;
-  margin: 0;
-  line-height: 1.6;
-}
-
-/* Tags */
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 8px;
-}
-.tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 12px;
-  color: #fff;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
-}
-.dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background: #dc6e21;
-}
-
-/* CTA Button */
-.cta {
-  margin-top: 8px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 10px 14px;
-  border-radius: 10px;
-  border: 1px solid rgba(220,110,33,0.6);
-  background: rgba(220,110,33,0.1);
-  transition: all 0.3s ease;
-}
-.cta:hover {
-  background: #dc6e21;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 0 14px rgba(220,110,33,0.4);
-}
-.cta svg {
-  width: 16px;
-  height: 16px;
-  stroke: currentColor;
-}
-
-
-</style>
 
     <section class="section" aria-labelledby="services-title">
       <div class="container">
@@ -638,102 +361,6 @@ body {
   </div>
 </section>
 
-<!-- ===== CSS ===== -->
-<style>
-.book-categories {
-  background: linear-gradient(145deg, #000, #dc6e21);
-  color: white;
-  padding: 100px 0;
-  position: relative;
-  overflow: hidden;
-}
-
-.section-title h2 {
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-.section-title h2 span {
-  color: #fff;
-  background: #dc6e21;
-  padding: 2px 10px;
-  border-radius: 6px;
-}
-.section-title p {
-  color: #f2f2f2;
-  max-width: 700px;
-  margin: 0 auto 60px;
-  line-height: 1.7;
-  font-size: 1.05rem;
-}
-
-.categoriesSwiper {
-  width: 100%;
-  padding-bottom: 70px;
-}
-.category-card {
-  position: relative;
-  border-radius: 18px;
-  overflow: hidden;
-  height: 420px;
-  background-image: var(--bg);
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-.category-card .overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent 70%);
-}
-.category-card h3 {
-  position: absolute;
-  bottom: 25px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: #fff;
-  z-index: 2;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-.category-card:hover {
-  transform: scale(1.07);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
-}
-.category-card:hover h3 {
-  color: #dc6e21;
-  transform: translateY(-5px);
-}
-
-/* Swiper Controls */
-.swiper-button-next,
-.swiper-button-prev {
-  color: #fff;
-  transition: color 0.3s ease;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #dc6e21;
-}
-.swiper-pagination-bullet {
-  background: #fff !important;
-  opacity: 0.5;
-}
-.swiper-pagination-bullet-active {
-  background: #dc6e21 !important;
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  .section-title h2 { font-size: 2rem; }
-  .category-card { height: 320px; }
-}
-</style>
-
-<!-- ===== JS (Only Init) ===== -->
 <script>
 new Swiper(".categoriesSwiper", {
   slidesPerView: 3,
@@ -827,119 +454,11 @@ new Swiper(".categoriesSwiper", {
       we’ll handle it all while you focus on what matters most: your words.
     </p>
     <div class="cta-buttons">
-      <a href="#contact" class="cta-btn primary">Start My Book</a>
-      <a href="#services" class="cta-btn outline">Explore Services</a>
+      <a href="contact.html" class="cta-btn primary">Start My Book</a>
+      <a href="bookmarketing.html" class="cta-btn outline">Explore Our Marketing</a>
     </div>
   </div>
 </section>
-
-<style>
-.cta-section {
-  position: relative;
-  background: linear-gradient(135deg, #000000 0%, #0a0a0a 20%, #dc6e21 100%);
-  background-size: 400% 400%;
-  animation: gradientFlow 12s ease infinite;
-  padding: 120px 20px;
-  text-align: center;
-  color: white;
-  overflow: hidden;
-}
-
-.cta-overlay {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.08), transparent 60%),
-              radial-gradient(circle at 80% 20%, rgba(220,110,33,0.2), transparent 50%);
-  z-index: 1;
-}
-
-.cta-content {
-  position: relative;
-  z-index: 2;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.cta-content h2 {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  margin-bottom: 20px;
-  line-height: 1.2;
-  background: linear-gradient(90deg, #ffffff, #ffb27b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cta-content p {
-  color: #f5f5f5;
-  font-size: 1.1rem;
-  margin-bottom: 40px;
-  line-height: 1.7;
-}
-
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.cta-btn {
-  display: inline-block;
-  padding: 14px 34px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 0.95rem;
-  border-radius: 50px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.cta-btn.primary {
-  background: linear-gradient(90deg, #dc6e21, #ffb77a);
-  color: #fff;
-  box-shadow: 0 0 20px rgba(220,110,33,0.6);
-}
-
-.cta-btn.primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(255,178,123,0.9);
-}
-
-.cta-btn.outline {
-  border: 2px solid #fff;
-  color: #fff;
-  background: transparent;
-}
-
-.cta-btn.outline:hover {
-  background: white;
-  color: #000;
-  transform: translateY(-3px);
-}
-
-/* Animated Background */
-@keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-@media (max-width: 768px) {
-  .cta-content h2 {
-    font-size: 2rem;
-  }
-  .cta-content p {
-    font-size: 1rem;
-  }
-  .cta-section {
-    padding: 80px 20px;
-  }
-}
-</style>
 
 
     <!-- Footer -->
@@ -948,16 +467,14 @@ new Swiper(".categoriesSwiper", {
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-widget">
-                       <a href="#" class="footer-logo">
+                       <a href="index.html" class="footer-logo">
   <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="footer-logo-img" style="height: 50px;">
 </a>
 
                         <p>We craft distinctive brand identities and experiences that captivate audiences and drive business growth.</p>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.facebook.com/nexuspublishersinc/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/nexuspublishersinc/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -965,10 +482,9 @@ new Swiper(".categoriesSwiper", {
                     <div class="footer-widget">
                         <h4>Quick Links</h4>
                         <ul class="footer-links">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -976,10 +492,10 @@ new Swiper(".categoriesSwiper", {
                     <div class="footer-widget">
                         <h4>Our Services</h4>
                         <ul class="footer-links">
-                            <li><a href="#">Book Publishing</a></li>
-                            <li><a href="#">Book Editing</a></li>
-                            <li><a href="#">Book Cover Design</a></li>
-                            <li><a href="#">Book Marketing</a></li>
+                            <li><a href="bookpublishing.html">Book Publishing</a></li>
+                            <li><a href="bookediting.html">Book Editing</a></li>
+                            <li><a href="cover-design.html">Book Cover Design</a></li>
+                            <li><a href="bookmarketing.html">Book Marketing</a></li>
                         </ul>
                     </div>
                 </div>
@@ -987,9 +503,9 @@ new Swiper(".categoriesSwiper", {
                     <div class="footer-widget">
                         <h4>Contact Us</h4>
                         <div class="contact-info">
-                            <p><i class="fas fa-map-marker-alt"></i> 123 Creative Street, Design City, 10001</p>
-                            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                            <p><i class="fas fa-envelope"></i> info@nexus.com</p>
+                            <p><i class="fas fa-map-marker-alt"></i>3657 Nicole Ct,Turlock,CA,95382</p>
+                            <p><i class="fas fa-phone"></i> +1 (646) 386-1399</p>
+                            <p><i class="fas fa-envelope"></i> info@nexuspublishersinc.com</p>
                         </div>
                     </div>
                 </div>
@@ -997,7 +513,7 @@ new Swiper(".categoriesSwiper", {
             <div class="footer-bottom">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>&copy; 2023 Novus. All Rights Reserved.</p>
+                        <p>&copy; 2025 Nexus Publishers INC. All Rights Reserved.</p>
                     </div>
                     <div class="col-md-6 text-md-end">
                         <p>Privacy Policy | Terms of Service</p>
