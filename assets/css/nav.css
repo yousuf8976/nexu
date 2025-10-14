@@ -1,0 +1,218 @@
+
+/* Navbar Styles */
+.navbar {
+    padding: 20px 0;
+    transition: all 0.4s ease;
+    background-color: transparent;
+}
+
+.navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+/* Brand Logo */
+.navbar-brand {
+    display: inline-block;
+    position: relative;
+}
+
+.brand-logo {
+    height: 50px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.white-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.default-logo {
+    opacity: 0;
+}
+
+.navbar.scrolled .white-logo {
+    opacity: 0;
+}
+
+.navbar.scrolled .default-logo {
+    opacity: 1;
+}
+
+.navbar-brand:hover .brand-logo {
+    transform: scale(1.05);
+}
+
+/* Nav Links */
+.nav-link {
+
+    color: white !important; /* White by default */
+    font-weight: 500;
+    padding: 8px 15px !important;
+    position: relative;
+    transition: var(--transition);
+}
+
+.navbar.scrolled .nav-link {
+    color: var(--dark-color) !important; /* Black when scrolled */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--gradient);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-color) !important;
+}
+
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+/* Fix: Remove blue outline on dropdown focus */
+.nav-link:focus,
+.dropdown-toggle:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+/* Toggler */
+.navbar-toggler {
+    border: none;
+    padding: 0;
+    color: white;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.navbar.scrolled .navbar-toggler {
+    color: var(--dark-color);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler:hover {
+    color: var(--accent-color);
+}
+
+.navbar.scrolled .navbar-toggler:hover {
+    color: var(--primary-color);
+}
+
+/* CTA */
+.nav-cta .btn {
+    padding: 8px 20px;
+    font-size: 0.85rem;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    
+    border: none;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    padding: 15px;
+    margin-top: 15px;
+    border-top: 3px solid var(--primary-color);
+    animation: fadeInUp 0.3s ease;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: var(--transition);
+    color:#000;
+    font-weight: 500;
+}
+
+.dropdown-item i {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.dropdown-item:hover {
+    background-color: rgba(78, 87, 212, 0.1);
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.dropdown-item:hover i {
+    transform: scale(1.2);
+}
+
+
+
+/* ✅ Mobile Navbar Fix (only when collapsed) */
+@media (max-width: 991px) {
+    .navbar-collapse.collapse.show {
+        background-color: white !important; /* visible only when expanded in mobile */
+        border-radius: 0 0 20px 20px;
+        padding: 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .navbar-collapse.collapse.show .nav-link {
+        color: var(--dark-color) !important; /* black text inside mobile menu only */
+    }
+
+    .navbar-collapse.collapse.show .nav-link:hover {
+        color: var(--primary-color) !important;
+    }
+
+    .navbar-collapse.collapse.show .dropdown-menu {
+        background-color: white !important;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
+
+    .navbar-collapse.collapse.show .dropdown-item {
+        color: var(--dark-color) !important;
+    }
+
+    .navbar-collapse.collapse.show .dropdown-item:hover {
+        background-color: rgba(78, 87, 212, 0.1);
+        color: var(--primary-color) !important;
+    }
+
+    .nav-link:hover::after,
+.nav-link.active::after {
+    width: 20%;
+  margin-right: 70% !important;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--gradient);
+    bottom: 0;
+    left: 15%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    border-radius: 2px;
+}
+}
