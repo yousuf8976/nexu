@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/brand-homepage.css">
+    <link rel="stylesheet" href="assets/css/service.css">
     <link rel="stylesheet" href="assets/css/nav.css">
 </head>
 <body>
@@ -22,8 +23,8 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="brand-logo default-logo">
-                <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="brand-logo white-logo">
+                <img src="assets/img/logo-wyt.webp" alt="Nexus Publishing" class="brand-logo default-logo">
+                <img src="assets/img/logo-wyt.webp" alt="Nexus Publishing" class="brand-logo white-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -84,7 +85,7 @@
 
       <!-- RIGHT: Hero Image -->
       <div class="col-lg-6 text-center position-relative mt-5 mt-lg-0">
-        <img src="assets/img/Rectangle 152.webp" alt="Book Publishing" class="img-fluid hero-image rounded-4" >
+        <img src="assets/img/publish.png" alt="Book Publishing" class="img-fluid hero-image rounded-4" >
       </div>
 
     </div>
@@ -93,6 +94,27 @@
 
 <!-- ================== STYLES ================== -->
 <style>
+  .hero-image {
+  width: 100%;
+  max-width: 500px;  /* 👈 adjust this for desktop size */
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 992px) {
+  .hero-image {
+    max-width: 400px;  /* 👈 slightly smaller for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image {
+    max-width: 300px;  /* 👈 mobile friendly size */
+  }
+}
 .hero-section {
   min-height: 80vh;
   background: linear-gradient(135deg, #000000 0%, #0a0a0a 30%, #dc6e21 100%);
@@ -288,93 +310,6 @@
 </section>
 
 <!-- ================== SHARED STYLES ================== -->
-<style>
-    h5,h6{
-        color: white;
-    }
-.section-title {
-    color: #fff;
-  font-size: 2.6rem;
-  font-weight: 700;
-}
-.section-title span {
-  color: #ff7b00;
-}
-.section-subtitle {
-  max-width: 600px;
-  margin: 0 auto;
-  opacity: 0.9;
-}
-
-/* CORE SERVICES */
-.core-services {
-  background: radial-gradient(circle at 20% 20%, #1a1a1a 0%, #000000 100%);
-}
-.service-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(6px);
-}
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 25px rgba(255,123,0,0.4);
-}
-.service-card p {
-    color: #fff;
-}
-
-.icon {
-  font-size: 2.5rem;
-  color: #ff7b00;
-}
-
-/* PROCESS */
-.process-section {
-  background: linear-gradient(135deg, #0a0a0a 0%, #111 40%, #dc6e21 100%);
-}
-.step {
-  margin-bottom: 30px;
-}
-.step-icon {
-  font-size: 2.5rem;
-  color: #ffae00;
-  margin-bottom: 15px;
-}
-.step h6 {
-  font-weight: 700;
-}
-.step p {
-  opacity: 0.85;
-}
-
-/* WHY CHOOSE US */
-.why-choose-us {
-  background: #0a0a0a;
-}
-.feature-box {
-  background: rgba(255,255,255,0.05);
-  border-radius: 14px;
-  transition: 0.3s;
-  border: 1px solid rgba(255,255,255,0.08);
-}
-.feature-box:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 25px rgba(255,123,0,0.3);
-}
-.feature-icon {
-  font-size: 2.5rem;
-  color: #ff7b00;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .section-title { font-size: 2rem; }
-  .service-card, .feature-box { padding: 2rem 1rem; }
-}
-</style>
-
 
 
 <!-- ===== CTA Section ===== -->
@@ -400,7 +335,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-widget">
                        <a href="#" class="footer-logo">
-  <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="footer-logo-img" style="height: 50px;">
+  <img src="assets/img/logo-wyt.webp" alt="Nexus Publishing" class="footer-logo-img" style="height: 50px;">
 </a>
 
                         <p>We craft distinctive brand identities and experiences that captivate audiences and drive business growth.</p>

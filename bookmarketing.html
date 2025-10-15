@@ -14,6 +14,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/brand-homepage.css">
+    <link rel="stylesheet" href="assets/css/service.css">
     <link rel="stylesheet" href="assets/css/nav.css">
 </head>
 <body>
@@ -22,8 +23,8 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="brand-logo default-logo">
-                <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="brand-logo white-logo">
+                <img src="assets/img/logo-wyt.webp" alt="Nexus Publishing" class="brand-logo default-logo">
+                <img src="assets/img/logo-wyt.webp" alt="Nexus Publishing" class="brand-logo white-logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -83,105 +84,17 @@
       </div>
 
       <!-- RIGHT: Hero Image -->
-      <div class="col-lg-6 text-center position-relative mt-5 mt-lg-0">
-        <img src="assets/img/marketing-branding-planning-vision-goals-concept-84041481.webp" alt="Book Marketing" class="img-fluid hero-image rounded-4">
-      </div>
+  <div class="col-lg-6 text-center position-relative  mt-lg-0">
+  <img src="assets/img/mar.png" 
+       alt="Book Marketing" 
+       class="img-fluid hero-image rounded-4">
+</div>
+
 
     </div>
   </div>
 </section>
 <!-- ================== STYLES ================== -->
-<style>
-.hero-section {
-  min-height: 80vh;
-  background: linear-gradient(135deg, #000000 0%, #0a0a0a 30%, #dc6e21 100%);
-  position: relative;
-  padding: 80px 0;
-}
-
-.hero-text {
-  z-index: 2;
-}
-
-.hero-title {
-  font-size: 3.2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  text-transform: capitalize;
-  text-shadow: 0 0 30px rgba(0,0,0,0.4);
-}
-
-.hero-title .highlight {
-  color: #ff7b00;
-  position: relative;
-}
-.hero-title .highlight::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 3px;
-  border-radius: 10px;
-}
-
-.hero-title .subline {
-  color: #fff;
-  font-weight: 400;
-  opacity: 0.9;
-}
-
-.btn-primary {
-  border: none;
-  transition: all 0.3s ease;
-}
-.btn-primary:hover {
-  transform: translateY(-3px);
-  filter: brightness(1.1);
-}
-
-.btn-outline-light {
-  border: 1px solid rgba(255,255,255,0.7);
-  transition: all 0.3s ease;
-}
-.btn-outline-light:hover {
-  background: #fff;
-  transform: translateY(-3px);
-}
-
-.hero-image {
-  max-width: 90%;
-  animation: fadeInRight 1s ease forwards;
-  filter: drop-shadow(0 0 25px rgba(0,0,0,0.5));
-}
-
-@keyframes fadeInRight {
-  from { opacity: 0; transform: translateX(40px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-
-/* RESPONSIVE FIXES */
-@media (max-width: 991px) {
-  .hero-section {
-    text-align: center;
-  }
-  .hero-title {
-    font-size: 2.4rem;
-  }
-  .lead {
-    font-size: 1rem;
-  }
-  .hero-image {
-    margin-top: 40px;
-    max-width: 100%;
-  }
-  .hero-buttons a {
-    width: 100%;
-    max-width: 280px;
-  }
-}
-</style>
-
 
 <!-- ================== SECTION 1: CORE SERVICES ================== -->
 <section class="core-services py-5 position-relative text-white">
@@ -293,93 +206,6 @@
 
 
 
-<!-- ================== SHARED STYLES ================== -->
-<style>
-    h5,h6{
-        color: white;
-    }
-.section-title {
-    color: #fff;
-  font-size: 2.6rem;
-  font-weight: 700;
-}
-.section-title span {
-  color: #ff7b00;
-}
-.section-subtitle {
-  max-width: 600px;
-  margin: 0 auto;
-  opacity: 0.9;
-}
-
-/* CORE SERVICES */
-.core-services {
-  background: radial-gradient(circle at 20% 20%, #1a1a1a 0%, #000000 100%);
-}
-.service-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(6px);
-}
-.service-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 25px rgba(255,123,0,0.4);
-}
-.service-card p {
-    color: #fff;
-}
-
-.icon {
-  font-size: 2.5rem;
-  color: #ff7b00;
-}
-
-/* PROCESS */
-.process-section {
-  background: linear-gradient(135deg, #0a0a0a 0%, #111 40%, #dc6e21 100%);
-}
-.step {
-  margin-bottom: 30px;
-}
-.step-icon {
-  font-size: 2.5rem;
-  color: #ffae00;
-  margin-bottom: 15px;
-}
-.step h6 {
-  font-weight: 700;
-}
-.step p {
-  opacity: 0.85;
-}
-
-/* WHY CHOOSE US */
-.why-choose-us {
-  background: #0a0a0a;
-}
-.feature-box {
-  background: rgba(255,255,255,0.05);
-  border-radius: 14px;
-  transition: 0.3s;
-  border: 1px solid rgba(255,255,255,0.08);
-}
-.feature-box:hover {
-  transform: scale(1.04);
-  box-shadow: 0 0 25px rgba(255,123,0,0.3);
-}
-.feature-icon {
-  font-size: 2.5rem;
-  color: #ff7b00;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .section-title { font-size: 2rem; }
-  .service-card, .feature-box { padding: 2rem 1rem; }
-}
-</style>
 
 
 <!-- ================== CTA SECTION (BOOK MARKETING) ================== -->
@@ -404,7 +230,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-widget">
                        <a href="index.html" class="footer-logo">
-  <img src="assets/img/logo-wyt.webp" alt="Novus Publishing" class="footer-logo-img" style="height: 50px;">
+  <img src="assets/img/logo-wyt.webp" alt="Nexus Publishing" class="footer-logo-img" style="height: 50px;">
 </a>
 
                         <p>We craft distinctive brand identities and experiences that captivate audiences and drive business growth.</p>
